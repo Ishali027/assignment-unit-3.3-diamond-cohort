@@ -17,11 +17,14 @@ console.log('Second supply change is:', supplyChanges[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
-
+console.log('4. Removed item:');
+removedItem = supplyChanges.pop();
+console.log('The removed item is:', removedItem);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Adding 25 to supplyChanges.');
-
+supplyChanges.push(25);
+console.log("With new supply changes:", supplyChanges);
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
